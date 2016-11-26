@@ -1,0 +1,452 @@
+<?
+/*
+*	A OMEGA ROBOT DESIGNING PROJECT
+*		OMEGA TRAM
+*		 Objectives.html	
+*
+* Gives detail information about the project and the way it has been prepared
+*/
+//includes required files
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="omega, robot, climabing, climbing robot, tram, TRAM, omgea tram" />
+<meta name="description" content="A robot designing project " />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>
+	OMEGA TRAM
+</title>
+<!--some stylesheets that this tempelate is using -->
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Bevan" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+		<div id="logo">
+			
+			<h1>
+				<a href="#"><strong>OMEGA TRAM</strong></a>			</h1>
+		</div>
+		<div id="search">
+			<form action="http://www.google.com.np/search" method="get">
+			  <div>
+					<input class="text" name="q" size="32" maxlength="64" />
+			  </div>
+			</form>
+		</div>
+		  
+  </div>
+	<div id="menu" align="center"> 
+		<div id="websurf">
+			<ul>
+				<li class="first active"><a href="/">Home
+				</li>
+				<li><a href="Objectives.html">Objectives</a></li>
+				<li><a href="Principle.html">Principle</a></li>
+				<li><a href="Introduction.html">Introduction to Robotics (Research)</a></li>
+				<li><a href="Design.html">Design analysis and decision</a></li>
+				<li><a href="Design.html#Force and Energy">Force and Energy</a></li>
+				<li><a href="Design.html#Hand">Hand</a></li>
+				<li><a href="Design.html#Gripping">Gripping</a></li>
+				<li><a href="Design.html#Current reverser">Current reverser</a></li>
+				<li><a href="Design.html#Programmable clock disk">Programmable clock disk</a></li>
+				<li><a href="Initial.html">Initial design</a></li>
+				<li><a href="Objects.html">Objects used</a></li>
+				<li><a href="Final.html">Final design</a></li>
+				<li><a href="Problems.html">Problems encountered and their solution</a></li>
+				<li><a href="#About">About</a> </li>
+				<li><a href="#Thank You Note">Thank You Note</a> </li>
+				</ul>
+				<br class="clearfix" />
+
+		</div>
+	</div>
+	<div id="page">
+		<div id="content">
+              		<img src="images/logo.gif" >
+			<h3>Tight-rope Robotic Arm Model</h3>
+		<div class="box">
+				<h2><a name="Design analysis and decision"> Design analysis and decision</a></h2>
+				<p>
+				<b>Preference</b>
+				<ul>
+    					<li>simple design</li>
+				</ul>
+				</p>
+				<b>Decision</b>
+				<ul>
+    					<li>to create planar robot with only two degree of freedom</li>
+					<li>to develop joints with only degree of motion that is required</li>
+			</ul>
+			</p>
+			<h3><a name="Force and Energy">Force and Energy analysis</a></h3>
+			<p>
+			Our machine will have to face or will be acted by following forces:
+				<ul>
+    					<li>Gravity (hampers to create lift)</li>
+					<li>Tension (rope thats unable to handle tension may break)</li>
+					<li>Friction (hampers in linear motion of hand and helpful for effective grasping)</li>
+					<li>Rotational force from motor(movement of arm and strong grasping)</li>
+				</ul>
+				</p>
+				<p>
+				Our machine can be made to use two of these power sources:<br>
+				<ul>
+					<li>DC current from AC to DC converter
+					</li>
+					<li>DC current from battery
+					</li>
+				</ul>
+				Difference between two power sources
+				<table border=1>
+					<tr>
+						<th>DC current from AC to DC converter</th>
+						<th>DC current from battery</th>
+					</tr>
+					<tr>
+					<td>Max volt:15</td>
+					<td>Max volt:13</td>
+					</tr>
+					<tr>
+					<td>Could not be used at the time of loadshedding</td>
+					<td>Could be used at the time of loadshedding</td>
+					</tr>
+						<tr>
+					<td>Unlikely to be used in actual robot as electric source should be always near by.</td>
+					<td>More close or could be used in actual advanced robot due to no limitation of staying near an electric source.</td>
+					</tr>
+				</table>
+				Our machine have to do work against gravity and friction.<br>
+				<b>Preference</b>
+				<ul>
+					<li>Our robot should be as light as possible to minimize the energy required for lift.
+					</li>
+					<li>The rope should be strong enough to overcome the tension caused by the weight of the robot.</li>
+					<li>Friction between rope and the machine should be minimum to reduce energy required for the operation.</li>
+					<li>Center of gravity should be actually below the rope to avoid dangling of the robot in any side.</li>
+				</ul>
+				<b>Decision</b>
+				<ul>
+					<li>To use Aluminum metal due to its characteristic of weight to strength ratio (it is light but strong).</li>
+					<li>To use nylon rope as it is strong and has less friction.</li>
+					<li>To create robot symmetrical in all aspects.</li>
+				</ul>
+				<h3><a name="Hand">Hand</a></h3>
+				<p>Hand is the essential part of the robot and its design should be dictated as per the size of the rope to be used. It holds the whole weight of the body and some defect on the design of hand may cause the robot to fall down and can destroy it.
+</p>
+				<b>Preference</b>
+				<ul>
+					<li>Small in size as much as possible</li>
+					<li>Design should be close to human arm</li>
+					<li>Hand should allow only few movements which is required to create thought functionality</li>
+					<li>Design must create an ease in demonstration on exhibition</li>
+				</ul>
+				<b>Decision</b>
+				<ul>
+					<li>Hand will have only two point which allow motion:<br>
+					<ul>
+					<li>Thumb (as a lock on to rope and to ease robot to be kept in the rope)</li>
+					<li>Fingers (moves just enough for grasping and avoids falling down by tilting of robot)</li>
+					</ul>
+				</ul>
+				<h3><a name="Functionality of hand"">Functionality of hand</a></h3>
+				<h4><A NAME="Gripping">Grasping</a></h4>
+				<p>Different forms of Grasping methodology that can be used:
+				</p>
+				<h5>Electromagnet</h5>
+<IMG SRC="images/magnet1.jpg" WIDTH=100% BORDER=0><BR CLEAR=LEFT><FONT SIZE=3><I>process of grasping and non grasping through electromagnet</I></FONT>
+<IMG SRC="images/magnet2.jpg" WIDTH=100% BORDER=0><BR CLEAR=LEFT><FONT SIZE=3><I>process of grasping and non grasping through electromagnet</I></FONT>
+				<p>We can use electromagnet to enable hand for grasping. It works on the principle of like pole repels and unlike pole attracts. The attractive force is the way to tighten the grip and repelling force is used lose the grip.
+				</p>
+				<b>Advantages</b>
+				<ul>
+					<li>A simple idea</li>
+					<li>Hands can be made to grasp and lose with change in direction of current through electromagnet</li>
+					<li>The change from gripping hand to non gripping can be done almost instantaneously</li>
+				</ul>
+				<b>Disadvantages</b>
+				<ul>
+					<li>Electromagnet is heavy due to addition of soft iron core</li>
+					<li>The force generated by electromagnet may not be enough for proper grasping the rope</li>
+					<li>Its not really close to the design of actual human hands and may not be used in advanced robot</li>
+				</ul>
+				<h3>motor (thread)</h3>
+<IMG SRC="images/motorthread1.jpg" WIDTH=100% BORDER=0><BR CLEAR=LEFT><FONT SIZE=3><I>process of grasping and non grasping through electromagnet</I></FONT>
+<IMG SRC="images/motorthread2.jpg" WIDTH=100% BORDER=0><BR CLEAR=LEFT><FONT SIZE=3><I>process of grasping and non grasping through electromagnet</I></FONT>
+
+				<p>A motor is used to pull a thread which will in turn pull fingers of hand creating a grip.
+				</p>
+				<b>Advantages</b>
+				<ul>
+					<li>A simple idea close to human hand.</li>
+					<li>Hands can be made to grasp and lose with change in direction of current through motor.</li>
+					<li>It can grab rope more easily and accurately.</li>
+				</ul>
+				<b>Disadvantages</b>
+				<ul>
+					<li>Motor is heavy and adds load.</li>
+					<li>It takes time for a hand to be changed from grasping to non grasping and vice-versa.</li>
+					<li>It will be harder to operate with multiple controller.</li>
+					<li>It is close to the design of actual human hands and may be used in advanced robot.</li>
+				</ul>
+				<h3>motor (screw)</h3>
+<IMG SRC="images/screw1.png" WIDTH=100% BORDER=0><BR CLEAR=LEFT><FONT SIZE=3><I>process of grasping and non grasping through electromagnet</I></FONT>
+<IMG SRC="images/screw2.png" WIDTH=100% BORDER=0><BR CLEAR=LEFT><FONT SIZE=3><I>process of grasping and non grasping through electromagnet</I></FONT>
+
+				<p>A motor is used to move the screw up and down creating a grip.</p>
+				<b>Advantages</b>
+				<ul>
+					<li>Hands can be made to grasp and lose with change in direction of current through motor.</li>
+					<li>It can grab rope very tightly.</li>
+				</ul>
+				<b>Disadvantages</b>
+				<ul>
+					<li>Motor is heavy and adds load.</li>
+					<li>It takes time for a hand to be changed from grasping to non grasping and vice-versa.</li>
+					<li>It will be harder to operate with multiple controller.</li>
+					<li>It is quite far from actual human hand and thus may not be used in actual advanced robot.</li>
+				</ul>
+				<b>Decision</b>
+				<p>We decided to use Electromagnet as it is not far from actual human hand design and easy to be demonstrated in Exhibition. On the failure of electromagnet we will choose other as alternatives.</p>
+				<h3><a name="Current reverser">Current reverser</a></h3>
+				<b>Preferences</b><br>
+					<ul>
+						<li>simple in design</li>
+						<li>light weight</li>
+						<li>less expensive if we buy ready made object</li>
+						<li>simple enough to create</li>
+					</ul>
+				<p>
+				Different types of current reverser that can be used:
+				</p>
+				<h3>4 way key</h3>
+				<p>A circular device with 4 places to connect wire and 4 places to place key. Keeping the key signifies closed circuit else open circuit.
+				</p>
+				<b>Advantages</b>
+				<ul>
+					<li>can be found in the market</li>
+				</ul>
+				<b>Disadvantages</b>
+				<ul>
+					<li>cannot change the direction of current instantaneously</li>
+					<li>may create confusion while using</li>
+				</ul>
+				<h3>DPST switch (Double pole single throw)</h3>
+				<p>It consist of two DPST switch which will connect input across one of the two of its output wires. The combination of two DPST switch can enable us to create a current reverser with change of switches to on state or off state at once.</p>
+<IMG SRC="images/dpst.jpg" WIDTH=100% BORDER=0><BR CLEAR=LEFT><FONT SIZE=3><I>circuit diagram of current reverser using two dspt switch </I></FONT>
+				<b>Advantages</b>
+				<ul>
+					<li>easy to create using switch</li>
+					<li>easy to use</li>
+					<li>current can be reversed almost instantaneously</li>
+				</ul>
+				<b>Disadvantages</b>
+				<ul>
+					<li>the circuit diagram can be confusing</li>
+				</ul>
+				<h3>Armed current reverser</h3>
+				<p>It is a device that looks like a miniature circuit breaker but reverse the direction of current instead of working like a fuse.</p>
+<IMG SRC="images/acr.jpg" WIDTH=100% BORDER=0><BR CLEAR=LEFT><FONT SIZE=3><I>armed current reverser</I></FONT><br>
+				<b>Advantages</b>
+				<ul>
+					<li>easy to grasp the principle of operation</li>
+					<li>easy to use</li>
+					<li>current can be reversed almost instantaneously</li>
+				</ul>
+				<b>Disadvantages</b>
+				<ul>
+					<li>should be created by ourselves</li>
+				</ul>
+						
+					
+				<br class="clearfix" />
+			</div>
+			<div class="box">
+				<h3><a name="Programmable clock disk">Programmable clock disk</a></h3>
+				<p>Programmable disk is a device that can be used to program a robot from machine level. It consist of a circular disk consisting of metal plate which is carefully cut so that they represent appropriate time the switch must be on. The upper portion consist of clocks minute hand with carbon brushes which connect with metal on disk to switch the circuit on.</p>
+<IMG SRC="images/programdisk.png" WIDTH=100% BORDER=0><BR CLEAR=LEFT><FONT SIZE=3><I>Programmable clock disk animated design</I></FONT><br>
+				<b>Data structure analysis used by Omega TRAM</b>
+				<p>3 tri-bit to control every single possible movement of Omega TRAM. The 3 tri-bit will control the grasping of two hands independently and one another tri-bit will control the movement of joint between upper and lower arm either towards the center of gravity or vice-versa.</p>
+				<b>Omega TRAM Byte</b>
+				<p>Omega TRAM Byte refers to the amount of information send to the OMEGA TRAM at a time. The term Byte is used as it is closed to computer which works on byte i.e. 8 binary Bit thus is easy to remember.</p>
+				<b>Tri-bit<br>
+				Introduction</b>
+				<P>
+				Tri-bit symbolizes the different types of data that can be send through a message carrier i.e. wire. The term tri means three and bit is used due to its closeness to computer which works on binary bit i.e. 0 and 1.
+				</p>
+				<b>Tri-bits actual representation in message carrier
+				</b>
+				<p>The message carrier will have following three states which represents the three tri-bit I.e . -1, 0, +1</p>
+				<table border=1>
+					<tr>
+						<th>Actual state</th>
+						<th>Work done by signal</th>
+						<th>Representation in digit (numerically equal to the sign of voltage between A and B)</th>
+					</tr>
+					<tr>
+						<td>current is passed from A connection to B</td>
+						<td>Anticlockwise rotation of motor</td>
+						<td>+1</td>
+					</tr>
+					<tr>
+						<td>Switch is off</td>
+						<td>No rotation of motor</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>current is passed from B connection to A</td>
+						<td>Clockwise rotation of motor</td>
+						<td>-1</td>
+					</tr>
+				</table>
+				<p>The representation tri-bit in grasping motors</p>
+				<table border=1>
+					<tr>
+						<th>Actual state</th>
+						<th>Work done by signal</th>
+						<th>Representation in digit (numerically equal to the sign of voltage between A and B)</th>
+					</tr>
+					<tr>
+						<td>current is passed from A connection to B</td>
+						<td>Grabbing of rope</td>
+						<td>+1</td>
+					</tr>
+					<tr>
+						<td>Switch is off</td>
+						<td>The hand remains static</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>current is passed from B connection to A</td>
+						<td>Loosening of grab on rope</td>
+						<td>-1</td>
+					</tr>
+				</table>
+The representation tri-bit in arm motors
+				<table border=1>
+					<tr>
+						<th>Actual state</th>
+						<th>Work done by signal</th>
+						<th>Representation in digit (numerically equal to the sign of voltage between A and B)</th>
+					</tr>
+					<tr>
+						<td>current is passed from A connection to B</td>
+						<td>Movement of arm away from the center of gravity</td>
+						<td>+1</td>
+					</tr>
+					<tr>
+						<td>Switch is off</td>
+						<td>Arms remain static</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>current is passed from B connection to A</td>
+						<td>Movement of arm towards the center of gravity</td>
+						<td>-1</td>
+					</tr>
+				</table>
+				
+				<b>Program</b>
+				<br>Program is the set of instruction stored in some device to carry out useful program.<br>
+				<b>Program Code</b><br>
+				
+				<table border=1>
+				<tr>
+					<th rowspan=2>Task
+					</th>
+					<th colspan=3>Omega TRAM byte
+					</th>
+				</tr>
+				<tr>
+					<th>Left hand tri-bit signal</th><th>Arm tri-bit signal</th><th>Right hand tri-bit signal</th>
+				</tr>
+				<tr>
+					<td>Step 1: Grasping by fingers of  a hand on a rope.</td>
+					<td>+1</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>Step 2: The next hand is pushed  forward away from the grasped hand.</td>
+					<td>0</td>
+					<td>+1</td>
+					<td>0</td>
+				</tr><tr>
+					<td>Step 3: The non grasping hand is made to grasp the rope  hand to lose.</td>
+					<td>0</td>
+					<td>0</td>
+					<td>+1</td>
+				</tr>
+				<tr>
+					<td>Step 4: The grasping hand is made to be lose</td>
+					<td>-1</td>
+					<td>0</td>
+					<td>0</td>
+				</tr><tr>
+					<td>Step 5: Again the free hand is pushed  forward but in same direction as that of grasped hand.</td>
+					<td>0</td>
+					<td>-1</td>
+					<td>0</td>
+				</tr>	
+			</table>
+			<b>Concept of storage of Program (memory)</b><br>
+			<p>The program of Omega tram is stored in a circular disc. The disc is divided into 6 concentric circle consisting of metal plate connected to either positive or negative terminal of the motors. Three concentric circle is dropped or touched with carbon brush connected to positive terminal of the source while other three are connected to negative terminal. The positive and negative three concentric circle will represent tri-bit signals for 2 motors of grasping and 1 motor of arm.</p>
+			<p>The lacks of metal plate is the storage of signal 0 while the metal plate is the storage of signal +1 or -1 as per the wire connected to the metal plate  as per the positive or negative voltage dropped between the motor from connection A to B due to it.
+			</p>
+<IMG SRC="images/storage.png" WIDTH=100% BORDER=0><BR CLEAR=LEFT><FONT SIZE=3><I>Storage design</I></FONT><br>
+			<b>Concept of reading of program (memory reader)</b><br>
+			<p>The stored signal is read with the help of reader which is a carbon brush in our case. Carbon brush will be connected with either positive or negative source which will touch the metal plate and will signify either +1 or -1 as per the positive or negative voltage dropped between the motor from connection A to B. No metal plate results in open circuit and signify 0.</p>
+			<p>The carbon brush is attached to second arm of clock so will read the stored program as time passes and second arm rotates. The program stored will be read as a instruction under infinite loop.</p>
+<IMG SRC="images/datareader.png" WIDTH=100% BORDER=0><BR CLEAR=LEFT><FONT SIZE=3><I>Data reader design</I></FONT><br>
+				
+				<br class="clearfix" />
+			</div>
+	  </div>
+	
+			<div id="page-bottom-sidebar">
+	
+			
+			<h2> Welcome to Omega TRAM documentation </h2>
+		    <p> This is <strong>OMEGA TRAM (Tightrope Robotic Arm Model)</strong>, a Omega scholars project done by Sujit Maharjan. With the help of his friends. All this documentation are in a <a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html"><b>GPL (GENERAL PUBLIC LICENCE)</b></a> license, so you are pretty much free to do whatever you want with it.</p>
+
+	  
+
+                		<h2> <a name="About" id="About">About</a> </h3>
+                		<p> This is the project we created to show in PULCHOWK ENGINEERING CAMPUS organized electromechanical intercollege competition. List of Team members of Omega TRAM</p>
+                		<ul class="list">
+                  			<li class="first">Sujit Maharjan (shubhajeet) </li>
+                  			<li>Shishir Aditya Gautam (ccr)</li>
+					<li>Season Maharjan</li>
+					<li>Binod Neupane</li>
+	   		        	<li class="last">Rohan Bidya</li>
+				</ul>
+				<p></p>
+
+			</div>
+				
+			<div id="sidebar">
+
+			<h2><a name="Thank You Note" id="Thank you note">THANK YOU NOTE</a></H3>
+			<p>We would like to thank Pulchowk Engineering Campus for providing us the platform which initiated our project. We would also like to thank our college OMEGA International Higher Secondary School for providing us funding for the project. We are also grateful to our friend Rohan Bidya, who spend his a week of winter vacation on helping us to create the robot. We would like to extend the thank you note to his dad as well.
+We would also like to thank all our Omega College Family ( teachers, students, other staff ) for their kind corporation and inspiration.
+At last and most importantly we would like to thank our parents for raising us and for their support and inspiration on this project.
+			</p>
+</li>
+                </ul>
+		<br class="clearfix" />
+              </div>
+	</div>
+	
+
+<div id="footer">
+	<br>
+	<img src="images/icon.gif" height=50px><br>A shubhajeet production
+	
+</div>
+</body>
+</html>
